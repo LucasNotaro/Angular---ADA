@@ -1,0 +1,19 @@
+<div>
+  <label for="titulo">Título</label>
+  <input id="titulo" [(ngModel)]="livro.titulo" />
+
+  <label for="autor">Autor</label>
+  <input id="autor" [(ngModel)]="livro.autor" />
+
+  <label for="anoPublicacao">Ano de Publicação</label>
+  <input id="anoPublicacao" [(ngModel)]="livro.anoPublicacao" />
+</div>
+
+<div>
+  <p>Resultado:</p>
+  <p>Título: {{ livro.titulo }}</p>
+  <p>Autor: {{ livro.autor }}</p>
+  <p>Ano de Publicação: {{ livro.anoPublicacao }}</p>
+</div>
+
+<button (click)="mostrarAlerta()">Mostrar Alerta</button>
